@@ -1,0 +1,13 @@
+[package]
+name = "movepump_lp_farming"
+version = "0.0.1"
+#published-at = "0x858de9e89c83f4807e4300c216a078f2aba5e0fae737fa42f474b825deffa939"
+
+[dependencies]
+#Sui = { local = "../../../crates/sui-framework/packages/sui-framework" }
+Sui = { git = "https://github.com/MystenLabs/sui.git", subdir = "crates/sui-framework/packages/sui-framework", rev = "framework/mainnet" }
+move_pump = {local = "../move_pump"}
+
+[addresses]
+movepump_lp_farming = "0x0"
+move_pump = "0x92fecee99603c0628ced2fbd37f85c05f6c0049c183eb6b1b58db24764c6c7bc"
